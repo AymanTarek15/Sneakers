@@ -1,0 +1,180 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 20vw 50vw 30vw;
+    align-items: center;
+    /* justify-content: space-around; */
+    height: 10vh;
+}
+
+#nav-list {
+    display: none;
+}
+
+nav h1 {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.nav-items {
+    padding: 10px;
+}
+
+.nav-items:hover {
+    background-color: #d86c2c;
+    /* filter: brightness(0.7); */
+    color: white;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    margin: 0 30px;
+    gap: 30px;
+}
+
+nav img {
+    width: 40px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: gray;
+}
+
+hr {
+    width: 80%;
+    color: gray;
+}
+
+/* Product view */
+
+.product-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+}
+
+.thumbnail {
+    height: 80px;
+}
+
+.first-thumb {
+    filter: brightness(0.5);
+}
+
+.thumbnail:hover {
+    filter: brightness(0.8);
+}
+
+section img {
+    height: 500px;
+    border-radius: 20px;
+}
+
+.left-container {
+    display: grid;
+    justify-content: flex-end;
+    margin-top: 150px;
+}
+
+.right-container {
+    margin-top: 200px;
+}
+
+.box-container {
+
+    display: grid;
+    grid-template-rows: auto auto auto auto auto 1fr;
+    justify-content: flex-start;
+    gap: 0px;
+}
+
+input {
+    height: 40px;
+    width: 100px;
+    text-align: center;
+}
+
+.box-container div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn {
+    padding: 10px 70px 0px 70px;
+    background-color: #d86c2c;
+    text-decoration: none;
+    color: white;
+    height: 35px;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+.btn::before {
+    content: url(ecommerce-product-page-main/images/icon-cart.svg);
+    color: white;
+    margin-right: 10px;
+}
+
+h3 {
+    color: #d86c2c;
+}
+
+.inl {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+#discount {
+    color: #d86c2c;
+    padding: 1px;
+    background-color: #e9c5b0;
+}
+
+.old-price {
+    margin-top: 0px;
+    text-decoration: line-through;
+    color: gray;
+}
+
+.inputs {
+    margin: 0;
+}
+
+@media screen and (max-width:992px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: 80%;
+        grid-template-rows: auto auto;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    .product-container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #nav-list {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 40px;
+    }
+}
