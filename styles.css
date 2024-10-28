@@ -106,6 +106,7 @@ section img {
   align-items: center;
   align-content: center;
   gap: 5px;
+  justify-content: center;
 }
 
 input[type="number"] {
