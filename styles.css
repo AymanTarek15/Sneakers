@@ -101,10 +101,18 @@ section img {
 }
 
 /* Quantity input */
+.inputs{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+
 input[type="number"] {
   height: 40px;
   width: 100px;
   text-align: center;
+  border-radius: 7%;
 }
 
 .btn {
@@ -116,6 +124,7 @@ input[type="number"] {
   align-items: center;
   justify-content: center;
   transition: filter 0.3s ease;
+  border-radius: 7%;
 }
 
 .btn:hover {
@@ -152,6 +161,12 @@ h3 {
 .old-price {
   text-decoration: line-through;
   color: gray;
+}
+
+.small-images{
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
 }
 
 /* Responsive styling */
